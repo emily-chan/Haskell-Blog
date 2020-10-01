@@ -13,13 +13,9 @@ First, install [Homebrew](https://brew.sh/) in Terminal by running:
 After Homebrew has successfully installed, run
 `brew install bnfc`
 
-To verify that bnfc was installed, run
-`bnfc --version`
+To verify that bnfc was installed, run `bnfc --version` and it should return `2.8.3` (or a higher number if it's a newer version).
 
-and it should return `2.8.3` (or a higher number if it's a newer version).
-
-While cabal is usually installed with Haskell, I also had to run
-`brew install cabal`
+While cabal is usually installed with Haskell, I also had to run `brew install cabal`
 
 To verify that cabal was installed, run
 `cabal --version`
@@ -33,6 +29,7 @@ Next, install ghcup by running
 
 Then, install alex (lexer generator) and happy (parser generator) by running
 `cabal install alex`
+
 `cabal install happy`
 
 To verify that these were installed, running
@@ -42,12 +39,12 @@ If either of the commands aren't found, try changing the Terminal shell by click
 Close the Terminal and reopen, then check that the shell has been changed to zsh on the top where it lists the your home directory (assuming that is your default profile when opening new windows).
 It should say `username@user-MBP ~ % ` on the command line.
 
-Originally, I was using the bash shell and received errors that the commands weren't found, but after switching to the zsh shell, everything worked for me.
+Originally, I used the bash shell and received errors that the commands weren't found, but after I switched to the zsh shell, everything worked for me.
 
 Now that everything is installed, you should be able to run and test BNFC.
 
 ## Run & Test BNFC
-Download the Calculators folder or copy the BNFC grammar from the [tutorial](https://bnfc.digitalgrammars.com/tutorial/bnfc-tutorial.html) from the section "My first compiler: calculator" and name it calc.cf
+Download the Calculators folder or copy the BNFC grammar from the [tutorial](https://bnfc.digitalgrammars.com/tutorial/bnfc-tutorial.html) in the section "My first compiler: calculator" and name it calc.cf
 
 cd into the folder where the `calc.cf` file is and run
 `bnfc -m -haskell numbers.cf`
