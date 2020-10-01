@@ -1,6 +1,6 @@
 # BNFC Installation
 
-Please install [Haskell](Haskell Installation.md) before proceeding to install BNFC.
+Please install [Haskell](Haskell-Installation.md) before proceeding to install BNFC.
 
 The [BNFC website](https://bnfc.digitalgrammars.com/) has installation information and a [tutorial](https://bnfc.digitalgrammars.com/tutorial/bnfc-tutorial.html) on calling BNFC and explains the different files that are created with examples.
 
