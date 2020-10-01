@@ -2,6 +2,7 @@
 # Haskell Blog
 
 This is a tutorial about Haskell.
+
 Pages:
 - [Haskell Installation](Haskell-Installation.md)
 - [BNFC Installation](BNFC-Installation.md) (requires Haskell installation).
