@@ -2,9 +2,9 @@
 
 Please install [Haskell](Haskell-Installation.md) before proceeding to install BNFC.
 
-The [BNFC website](https://bnfc.digitalgrammars.com/) has installation information and a [tutorial](https://bnfc.digitalgrammars.com/tutorial/bnfc-tutorial.html) on calling BNFC and explains the different files that are created with examples.
+The [BNFC website](https://bnfc.digitalgrammars.com/) has installation information. There is also a [tutorial](https://bnfc.digitalgrammars.com/tutorial/bnfc-tutorial.html) on calling BNFC and explains the different files that are created with examples.
 
-## MacOS/Linux
+## macOS/Linux
 
 First, install [Homebrew](https://brew.sh/) in Terminal by running:
 
@@ -13,24 +13,25 @@ First, install [Homebrew](https://brew.sh/) in Terminal by running:
 After Homebrew has successfully installed, run
 `brew install bnfc`
 
-To verify that bnfc was installed, run `bnfc --version` and it should return `2.8.3` (or a higher number if it's a newer version).
+To verify that bnfc was installed, run `bnfc --version` and it should return `2.8.3` (or a larger number if it's a newer version).
 
 While cabal is usually installed with Haskell, I also had to run `brew install cabal`
 
 To verify that cabal was installed, run
-`cabal --version`
-
-and it should return
-`cabal-install version 3.2.0.0
-compiled using version 3.2.0.0 of the Cabal library`
+`cabal --version` and it should return
+```
+cabal-install version 3.2.0.0
+compiled using version 3.2.0.0 of the Cabal library
+```
 
 Next, install ghcup by running
 `curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh`
 
 Then, install alex (lexer generator) and happy (parser generator) by running
-`cabal install alex`
-
-`cabal install happy`
+```
+cabal install alex
+cabal install happy
+```
 
 To verify that these were installed, running
 `alex` and `happy` should return usage information for each of them.
@@ -47,8 +48,7 @@ Now that everything is installed, you should be able to run and test BNFC.
 Download the Calculators folder or copy the BNFC grammar from the [tutorial](https://bnfc.digitalgrammars.com/tutorial/bnfc-tutorial.html) in the section "My first compiler: calculator" and name it calc.cf
 
 cd into the folder where the `calc.cf` file is and run
-`bnfc -m -haskell numbers.cf`
-This command should return
+`bnfc -m -haskell numbers.cf` This command should return
 ```
 8 rules accepted
 

@@ -1,5 +1,5 @@
 # Haskell Installation
-As a Mac user, I'm going to explain how to install Haskell on MacOS. The process should be similar on Windows.
+As a Mac user, I'm going to explain how to install Haskell on macOS. The process should be similar on Windows.
 
 First, open Terminal (Mac) or Command Prompt (Windows).
 
@@ -18,3 +18,9 @@ When this is executed, the GHCi version should be displayed, then "Prelude>" on 
 Go to the [The Haskell Tool Stack](https://docs.haskellstack.org/en/stable/README/) for more information.
 
 [Install/upgrade](https://docs.haskellstack.org/en/stable/install_and_upgrade/) also explains the installation process in more detail.
+
+## Tips
+To load a module (Haskell file), enter
+`:l filename.hs`
+
+After making changes, enter `:r` to reload it.
