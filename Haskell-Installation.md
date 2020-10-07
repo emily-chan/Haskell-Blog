@@ -20,7 +20,32 @@ Go to the [The Haskell Tool Stack](https://docs.haskellstack.org/en/stable/READM
 [Install/upgrade](https://docs.haskellstack.org/en/stable/install_and_upgrade/) also explains the installation process in more detail.
 
 ## Tips
-To load a module (Haskell file), enter
-`:l filename.hs`
+To load a module (Haskell file), enter `:load filename.hs` and `:reload` to reload it after making changes. After the file is loaded or reloaded, you should receive a message indicating which modules were loaded.
 
-After making changes, enter `:r` to reload it.
+View information about a specific type such as Num, by entering `:info Num`, which outputs the following:
+```
+Prelude> :info Num
+class Num a where
+  (+) :: a -> a -> a
+  (-) :: a -> a -> a
+  (*) :: a -> a -> a
+  negate :: a -> a
+  abs :: a -> a
+  signum :: a -> a
+  fromInteger :: Integer -> a
+  {-# MINIMAL (+), (*), abs, signum, fromInteger, (negate | (-)) #-}
+  	-- Defined in ‘GHC.Num’
+instance Num Word -- Defined in ‘GHC.Num’
+instance Num Integer -- Defined in ‘GHC.Num’
+instance Num Int -- Defined in ‘GHC.Num’
+instance Num Float -- Defined in ‘GHC.Float’
+instance Num Double -- Defined in ‘GHC.Float’
+```
+
+For more information about a certain built-in function like min, enter `:type min`:
+```
+Prelude> :type min
+min :: Ord a => a -> a -> a
+```
+
+A useful shortcut for these are `:l`, `:r`, `:i`, `:t` instead of typing out the whole word.
