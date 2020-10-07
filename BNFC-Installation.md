@@ -85,7 +85,7 @@ Linking TestCalc ...
 Next, run
 `echo "1+2*3" | ./TestCalc`
 
-which should return and abstract syntax tree
+which should return an abstract syntax tree
 
 ```
 Parse Successful!
