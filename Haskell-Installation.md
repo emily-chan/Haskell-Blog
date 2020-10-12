@@ -20,7 +20,7 @@ Go to the [The Haskell Tool Stack](https://docs.haskellstack.org/en/stable/READM
 [Install/upgrade](https://docs.haskellstack.org/en/stable/install_and_upgrade/) also explains the installation process in more detail.
 
 ## Tips
-To load a module (Haskell file), enter `:load filename.hs` and `:reload` to reload it after making changes. After the file is loaded or reloaded, you should receive a message indicating which modules were loaded.
+After entering `ghci` or `stack exec ghci` (depends on installation version), enter `:load filename.hs` to load a module (Haskell file) and `:reload` to reload it after making changes. Then you should receive a message indicating which modules were loaded.
 
 View information about a specific type such as Num, by entering `:info Num`, which outputs the following:
 ```
@@ -48,4 +48,10 @@ Prelude> :type min
 min :: Ord a => a -> a -> a
 ```
 
-A useful shortcut for these are `:l`, `:r`, `:i`, `:t` instead of typing out the whole word.
+To exit GHCi, enter `:quit` and you should receive a message `Leaving GHCi.`
+
+A useful shortcut for these are `:l`, `:r`, `:i`, `:t`, `:q` instead of typing out the whole word.
+
+#### References
+- https://hackmd.io/@alexhkurz/Hk86XnCzD
+- https://docs.haskellstack.org/en/stable/README/
