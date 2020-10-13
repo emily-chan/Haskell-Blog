@@ -71,6 +71,33 @@ nums !! 1
 ```
 would return 2 because it is the second element in the list.
 
+## List Comprehension
+List comprehensions are a useful way to manipulate lists with the left side performing the action, and the right side specifying the list.
+```Haskell
+tripleAll :: [Int] -> [Int]
+tripleAll ns = [3*n | n <- ns]
+```
+tripleAll takes a list of type Int and returns a list of Int with the values tripled. For every n in the list ns, it n is multiplied by 3.
+```
+tripleAll [1,2,3]
+[3,6,9]
+```
+
+In this example, the list `[1,2,3]` becomes `[1*3, 2*3, 3*3]` which results in [3,6,9].
+
+Similar logic can be applied to other types like String, but make sure to enter `import Data.Char` before defining the following function and calling it.
+
+```Haskell
+capitalize :: String -> String
+capitalize letters = [toUpper l | l <- letters]
+```
+The function capitalize takes in a String converts each letter in the String and applies toUpper to it, then returns a String in capital letters.
+```
+capitalize "hello"
+"HELLO"
+```
+
 #### References
 - https://hackage.haskell.org/package/base-4.9.1.0/docs/Data-List.html
 - https://wiki.haskell.org/How_to_work_on_lists
+- https://wiki.haskell.org/List_comprehension
