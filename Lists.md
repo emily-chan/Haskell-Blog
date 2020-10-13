@@ -17,11 +17,19 @@ The empty list is `[]`.
 
 We can add elements to the front of the list using x:xs notation.
 
-To create a list from an empty list, we would type `1:(2:(3:(4:(5:[]))))`.
+To create a list from an empty list, type `1:(2:(3:(4:(5:[]))))`.
 
-This can be abbreviated by removing the parenthesis:  `1:2:3:4:5:[]`.
+This can be abbreviated by removing the parentheses:  `1:2:3:4:5:[]`.
 
-If we wanted to add 6 to nums defined above, it would look like: `6:nums`
+Both ways shown above (with & without parentheses) would return `[1,2,3,4,5]`.
+
+Adding 6 to the front of the nums list defined above would look like: `6:nums` and would return `[6,1,2,3,4,5]`.
+
+To add an element to the end of a list, we use xs ++ x notation.
+
+For example, to add 6 to the end of nums list, type `nums ++ [6]`, which would return `[1,2,3,4,5,6]`. Note that this doesn't actually change the list nums.
+
+To store the list with the additional element(s), assign it to another list like so: `nums2 = nums ++ [6]`, then call `nums2` to return the list.
 
 ## List Operations
 A few of the basic operations on lists:
@@ -52,7 +60,14 @@ length: returns the size (number of elements) of the list
 nums = [1, 2, 3, 4, 5]
 length nums
 ```
-would return 5.
+would return 5. In another post, you'll see that we can easily create a length function ourselves using recursion.
+
+## Accessing List Elements
+Elements in lists use zero-based indexing. This means that we can access elements in a list (using the example nums defined above) by typing `nums !! n` where n is the index of the element's position.
+```Haskell
+nums !! 1
+```
+would return 2 because it is the second element in the list.
 
 #### References
 - https://hackage.haskell.org/package/base-4.9.1.0/docs/Data-List.html
