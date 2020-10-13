@@ -50,6 +50,16 @@ def addNums(x,y):
   return x+y
 ```
 
+Note: to add a single line comment, enter `--` before the line. For a multi-line comment, add `{-` at the beginning and `-}` at the end. An example of each is shown below.
+```Haskell
+-- single line comment
+{-
+this is a
+multi-line
+comment
+-}
+```
+
 This is a brief introduction to Haskell and other blog posts will explore various aspects in more detail.
 
 #### References
