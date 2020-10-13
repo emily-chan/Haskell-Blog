@@ -31,36 +31,38 @@ For example, to add 6 to the end of nums list, type `nums ++ [6]`, which would r
 
 To store the list with the additional element(s), assign it to another list like so: `nums2 = nums ++ [6]`, then call `nums2` to return the list.
 
+`++` can also be used to concatenate two lists together, like `[1,2,3]` and `[4,5,6]` to return `[1,2,3,4,5,6]`.
+
 ## List Operations
 A few of the basic operations on lists:
 
-head: return the first element of a list
+**head**: return the first element of a list
 ```Haskell
 nums = [1, 2, 3, 4, 5]
 head nums
 ```
 would return 1.
 
-last: return the last element of a list
+**last**: return the last element of a list
 ```Haskell
 nums = [1, 2, 3, 4, 5]
 last nums
 ```
 would return 5.
 
-tail: return the list of elements except for the head
+**tail**: return the list of elements except for the head
 ```Haskell
 nums = [1, 2, 3, 4, 5]
 tail nums
 ```
 would return [2,3,4,5].
 
-length: returns the size (number of elements) of the list
+**length**: returns the size (number of elements) of the list
 ```Haskell
 nums = [1, 2, 3, 4, 5]
 length nums
 ```
-would return 5. In another post, you'll see that we can easily create a length function ourselves using recursion.
+would return 5. In another post, you'll see that we can easily create a length function ourselves using [recursion](Recursion.md).
 
 ## Accessing List Elements
 Elements in lists use zero-based indexing. This means that we can access elements in a list (using the example nums defined above) by typing `nums !! n` where n is the index of the element's position.
