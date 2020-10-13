@@ -49,7 +49,7 @@ In Python, the same function would be:
 def addNums(x,y):
   return x+y
 ```
-
+### Comments
 Note: to add a single line comment, enter `--` before the line. For a multi-line comment, add `{-` at the beginning and `-}` at the end. An example of each is shown below.
 ```Haskell
 -- single line comment
