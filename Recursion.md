@@ -58,5 +58,53 @@ Ok, one module loaded.
 3628800
 ```
 
+### Sorting
+The odds and evens functions take in one non type-variable argument and return one non type-variable. The `odds` function returns characters at the odd positions while the even function returns characters at the even positions.
+```Haskell
+odds :: [a] -> [a]
+odds [] = []
+odds (x:xs) = x:evens xs
+
+evens :: [a] -> [a]
+evens [] = []
+evens (x:xs) = odds xs
+```
+For example, if the input was "Hello World", the H is at position 1, e at position 2, l at position 3, and so on.
+
+The `merge` function below takes two ordered lists and returns one merged ordered list. The function uses the `Ord` class that is used for ordered datatypes.
+The base case is two empty lists that returns an empty list. The second case is one list and one empty list that returns the one list, and vice versa. The recursive case compares the values in each list and merges them accordingly.
+```Haskell
+merge :: Ord a => [a] -> [a] -> [a]
+merge [] [] = []
+merge xs [] = xs
+merge [] ys = ys
+merge (x:xs) (y:ys)
+  | (x < y) = x:merge xs (y:ys)
+  | otherwise = y:merge ys (x:xs)
+```
+
+Merge sort is a divide and conquer sorting algorithm that splits the list in half, sorts each list separately, then merges them back together into one list. Once again, the base case is the empty list. The next case is a list that only contains one value. The recursive case utilizes the merge, odds, and evens functions defined above to sort the lists.
+```Haskell
+mergeSort :: Ord a => [a] -> [a]
+mergeSort [] = []
+mergeSort [x] = [x]
+mergeSort xs = merge (mergeSort (odds xs)) (mergeSort (evens xs))
+```
+
+Example input and output for calling the four functions above are shown below.
+```
+*Main> :l sorting.hs
+[1 of 1] Compiling Main             ( sorting.hs, interpreted )
+Ok, one module loaded.
+*Main> odds "Hello World"
+"HloWrd"
+*Main> evens "Hello World"
+"el ol"
+*Main> merge [1,4,5] [2,3,6]
+[1,2,3,4,5,6]
+*Main> mergeSort [8,21,6,45,3,100,59,2,84,76,1,14]
+[1,2,3,6,8,14,21,45,59,76,84,100]
+```
+
 #### References
 - http://learnyouahaskell.com/recursion
