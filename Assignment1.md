@@ -50,14 +50,14 @@ T (T (T (T I)))
 ```
 
 This table displays the how numbers are represented in NN, PN, and Integers.
- | NN                | PN              | Integer
- --------------------|-----------------|--------
- O                   |                 | 0
- S O                 | I               | 1
- S (S O)             | T I             | 2
- S (S (S O)          | T (T I)         | 3
- S (S (S (S O)))     | T (T (T I))     | 4
- S (S (S (S (S O)))) | T (T (T (T I))) | 5
+| NN                | PN              | Integer
+--------------------|-----------------|--------
+O                   |                 | 0
+S O                 | I               | 1
+S (S O)             | T I             | 2
+S (S (S O)          | T (T I)         | 3
+S (S (S (S O)))     | T (T (T I))     | 4
+S (S (S (S (S O)))) | T (T (T (T I))) | 5
 
 
 ### Fractions
@@ -71,7 +71,7 @@ Besides creating add and multiply functions for fractions, we also created funct
 The conversion functions we defined were used to convert from PN to NN and NN to PN. We also defined conversion functions nn2int, int2nn, int2pn, which allowed us to test larger numbers for our main arithmetic functions.
 
 The table below shows some example inputs and outputs:
-```
+
 | Input                                                              | Output
 ---------------------------------------------------------------------|-------
 frac2ints (addF (ints2frac (3,5)) (ints2frac (2,10)))                | (40,50)
@@ -81,7 +81,7 @@ frac2ints (simplifyF ((multF (ints2frac (1,3)) (ints2frac (4,12))))) | (1,9)
 equalF (ints2frac (1,2)) (ints2frac (2,4))                           | True
 equalF (ints2frac (1,2)) (ints2frac (3,4))                           | False
 addF (ints2frac (1,2)) (ints2frac (3,4))                             | (S (S (S (S (S (S (S (S (S (S O))))))))),T (T (T (T (T (T (T I)))))))
-```
+
 
 ### Errors
 Of course, programmers encounter errors along the way.
