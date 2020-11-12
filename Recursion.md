@@ -59,7 +59,7 @@ Ok, one module loaded.
 ```
 
 ### Sorting
-The odds and evens functions take in one non type-variable argument and return one non type-variable. The `odds` function returns characters at the odd positions while the even function returns characters at the even positions.
+The odds and evens functions take in one non type-variable argument and return one non type-variable. The `odds` function returns characters at the odd positions while the `evens` function returns characters at the even positions.
 ```Haskell
 odds :: [a] -> [a]
 odds [] = []
@@ -71,8 +71,7 @@ evens (x:xs) = odds xs
 ```
 For example, if the input was "Hello World", the H is at position 1, e at position 2, l at position 3, and so on.
 
-The `merge` function below takes two ordered lists and returns one merged ordered list. The function uses the `Ord` class that is used for ordered datatypes.
-The base case is two empty lists that returns an empty list. The second case is one list and one empty list that returns the one list, and vice versa. The recursive case compares the values in each list and merges them accordingly.
+The `merge` function below takes two ordered lists as arguments and returns one merged ordered list. The function uses the `Ord` class that is used for ordered datatypes. The base case is two empty lists that returns an empty list. The second case is one list and one empty list that returns the one list, and vice versa. The recursive case compares the values in each list and merges them accordingly.
 ```Haskell
 merge :: Ord a => [a] -> [a] -> [a]
 merge [] [] = []
@@ -83,7 +82,7 @@ merge (x:xs) (y:ys)
   | otherwise = y:merge ys (x:xs)
 ```
 
-Merge sort is a divide and conquer sorting algorithm that splits the list in half, sorts each list separately, then merges them back together into one list. Once again, the base case is the empty list. The next case is a list that only contains one value. The recursive case utilizes the merge, odds, and evens functions defined above to sort the lists.
+Merge sort is a divide and conquer sorting algorithm that splits the list in half, sorts each list separately, then merges them back together into one list. The `mergeSort` function takes in two lists as arguments and returns one list, and uses the `Ord` class too. Once again, the base case is the empty list. The next case is a list that only contains one value. The recursive case utilizes the merge, odds, and evens functions defined above to sort the lists. Since the arguments can be of any type, integers and characters can be used with this function.
 ```Haskell
 mergeSort :: Ord a => [a] -> [a]
 mergeSort [] = []
