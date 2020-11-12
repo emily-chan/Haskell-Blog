@@ -64,7 +64,7 @@ writing new file ./DocCalc.txt
 writing new file ./Makefile
 ```
 
-Then run
+To compile all the files to generate the parser, run
 `make`
 and this should return
 ```
@@ -84,9 +84,7 @@ Linking TestCalc ...
 
 Next, run
 `echo "1+2*3" | ./TestCalc`
-
-which should return an abstract syntax tree
-
+where `TestCalc` is the parser and should return an abstract syntax tree:
 ```
 Parse Successful!
 

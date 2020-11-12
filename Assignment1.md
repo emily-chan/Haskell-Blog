@@ -60,7 +60,7 @@ This table displays the how numbers are represented in NN, PN, and Integers.
  S (S (S (S (S O)))) | T (T (T (T I))) | 5
 
 
-###Fractions
+### Fractions
 Thirdly, we defined fractions as a pair (numerator, denominator) like so:
 ```Haskell
 type Frac = (NN,PN)
@@ -72,7 +72,7 @@ The conversion functions we defined were used to convert from PN to NN and NN to
 
 The table below shows some example inputs and outputs:
 ```
-Input                                                                | Output
+| Input                                                              | Output
 ---------------------------------------------------------------------|-------
 frac2ints (addF (ints2frac (3,5)) (ints2frac (2,10)))                | (40,50)
 frac2ints (simplifyF (addF (ints2frac (3,5)) (ints2frac (2,10))))    | (4,5)
@@ -103,9 +103,7 @@ For Part 2, [BNFC](BNFC-Installation) is required. This part focuses on creating
 The first step was to create the interpreter for the abstract syntax to define and evaluate arithmetic expressions in the `numbers3.hs` file.
 ```Haskell
 data Exp = Num Integer | Plus Exp Exp | Times Exp Exp | Minus Exp Exp | Divide Exp Exp | Modulo Exp Exp | Power Exp Exp | Negate Exp | Abs Exp | GCD Exp Exp
-
 eval :: Exp -> Integer
-
 eval (Num n) = n
 ```
 
@@ -145,7 +143,7 @@ Since multiplication rules are applied before addition, the output would be:
 7
 ```
 
-Overall, this assignment showed me the importance of recursion and gain a better understanding of abstract and concrete syntax, and how these can be used to build something substantial like a calculator.
+Overall, this assignment showed me the importance of recursion and gain a better understanding of abstract and concrete syntax, and how these can concepts can be applied to build something useful like a calculator.
 
 #### References
 - https://github.com/alexhkurz/programming-languages-2020/blob/master/assignment-1.md
