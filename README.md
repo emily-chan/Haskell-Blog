@@ -15,7 +15,7 @@ The [Recursion](Recursion.md) page discusses the concept of recursion and how it
 
 Go to [BNFC Installation](BNFC-Installation.md) to learn more about how this grammar tool produces abstract syntax implementation, as well as lexer and parser generator files. At first I had some issues, but after searching online and asking for help from my professor I was able to figure it out. This page has more detailed information on my situation and will hopefully be of use to someone else who encounters similar problems.
 
-[Assignment 1](Assignment1.md) is a walk-through applies the concepts of recursion and abstract & concrete syntax. This requires an installation of BNFC.
+[Assignment 1](Assignment1.md) is a walk-through that applies the concepts of recursion and abstract & concrete syntax to create a calculator. This requires an installation of BNFC.
 
 Pages:
 - [Haskell Installation](Haskell-Installation.md)
