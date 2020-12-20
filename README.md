@@ -19,6 +19,8 @@ Go to [BNFC Installation](BNFC-Installation.md) to learn more about how this gra
 
 The [Lambda Calculus](Lambda-Calculus.md) page gives an overview, describes the rules, compares syntax, and explains why it is Turing-complete.
 
+[Multi-paradigm Languages](Multiparadigm-Languages.md) explores the language Scala on how it integrates functional and object-oriented programming and its benefits.
+
 Pages:
 - [Haskell Installation](Haskell-Installation.md)
 - [Functional Programming](Functional-Programming.md)
@@ -27,3 +29,4 @@ Pages:
 - [BNFC Installation](BNFC-Installation.md) (requires Haskell installation)
 - [Assignment 1](Assignment1.md)
 - [Lambda Calculus](Lambda-Calculus.md)
+- [Multi-paradigm Languages](Multiparadigm-Languages.md)
