@@ -17,7 +17,34 @@ trait Dog {
 ```
 
 ### Class Hierarchy
-Scala has an interesting class hierarchy that consists of a top and bottom. The top hierarchy includes `Any`, the base type of all types, then branches off into two subtypes. One of the subtypes is `AnyRef`, which is the base type of all reference types like scala.List, java.lang.String, and other Java classes. The second subtype is `AnyVal`, the base of all primitive types, including but not limited to Double, Float, Int, Boolean, and Char. At the bottom type is `Nothing`, which is a subtype of the other types and doesn't have a value. This is useful to signal abnormal termination or to be an element type of empty collections. Finally, the `Null` type is a subtype of the classes that inherit from `Object`. Every reference class type has a null value, and Null is not compatible with subtypes of `AnyVal`.
+Scala has an interesting class hierarchy that consists of a top and bottom. The top hierarchy includes `Any`, the base type of all types, then branches off into two subtypes. One of the subtypes is `AnyRef`, which is the base type of all reference types like ScalaObject, java.lang.String, and other Scala and Java classes. The second subtype is `AnyVal`, the base of all primitive types, including but not limited to Double, Float, Int, Boolean, and Char. At the bottom type is `Nothing`, which is a subtype of the other types and doesn't have a value. This is useful to signal abnormal termination or to be an element type of empty collections. Finally, the `Null` type is a subtype of the classes that inherit from `Object`. Every reference class type has a null value, and Null is not compatible with subtypes of `AnyVal`.
+
+A more comprehensive hierarchy is shown below and is hopefully easier to visualize:
+
+Top:
+- `Any`
+  - `AnyRef` (java.lang.Object)
+    - `ScalaObject`
+    - `Iterable`
+    - `Seq`
+    - `List`
+    - `java.Lang.String`
+    - other Java classes
+    - other Scala classes
+  - `AnyVal`
+    - `Double`
+    - `Float`
+    - `Long`
+    - `Int`
+    - `Short`
+    - `Byte`
+    - `Unit`
+    - `Boolean`
+    - `Char`
+
+Bottom:
+- `Null`
+  -`Nothing`
 
 ## Examples
 
@@ -26,11 +53,32 @@ A basic program in Scala looks like this:
 ```Scala
 object HelloWorld {
   def main(args: Array[String]) {
-    print("Hello world")
+    print("Hello world!")
   }
 }
 ```
 The output of this program is `"Hello world!"`
+
+The program below shows a function that takes in a two parameters of type Int, takes the power (num1^num2), then takes the cube root, and returns the result as an Int.
+
+In Java:
+```Java
+int powCbrt(int num1, int num2) {
+    int result = Math.pow(num1, num2);
+    return (int) (Math.sqrt(result));
+}
+```
+
+In Scala:
+```Scala
+import math._
+def powCbrt(num1: Int, num2: Int) = {
+  val result = pow(num1,num2)
+  (cbrt(result)).toInt
+}
+```
+
+Comparing both functions, Java uses the return statement whereas Scala uses type inference instead. The Scala version also imports the math library at the beginning which doesn't require calling it whenever a method within the math library is used like in Java. In the last line, Scala uses the `toInt` method, which declares the value `result` as immutable. While these differences are subtle between Scala and Java, they become more noticeable in larger programs and can reduce the number of lines of code and make it more efficient.
 
 ## Benefits
 Before writing this post, I wasn't familiar with Scala, but it was interesting to research features to learn more about how it works as a functional and object-oriented programming language. Aside from these advantages, Scala is fairly easy to learn, especially with prior knowledge of Java (which I have), and can be used to bridge the gap between Java and Haskell. This is helpful to follow functional programming and apply these practices to an object-oriented language like Java and have fewer lines of code and less bugs, ultimately improving productivity and quality. Scala also has good IDE support, such as IntelliJ IDEA and Scala IDE to name a couple.
@@ -40,3 +88,4 @@ The name Scala represents that this language is designed to grow along with the 
 #### References
 - https://en.wikipedia.org/wiki/Scala_(programming_language)
 - https://www.tutorialspoint.com/scala/scala_overview.htm
+- https://www.scala-exercises.org/scala_tutorial/object_oriented_programming
