@@ -44,7 +44,7 @@ Top:
 
 Bottom:
 - `Null`
-  -`Nothing`
+  - `Nothing`
 
 ## Examples
 
