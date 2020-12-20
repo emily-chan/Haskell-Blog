@@ -65,7 +65,7 @@ In Java:
 ```Java
 int powCbrt(int num1, int num2) {
     int result = Math.pow(num1, num2);
-    return (int) (Math.sqrt(result));
+    return (int) (Math.cbrt(result));
 }
 ```
 
