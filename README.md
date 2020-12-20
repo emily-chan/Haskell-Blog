@@ -17,6 +17,8 @@ Go to [BNFC Installation](BNFC-Installation.md) to learn more about how this gra
 
 [Assignment 1](Assignment1.md) is a walk-through that applies the concepts of recursion and abstract & concrete syntax to create a calculator. This requires an installation of BNFC.
 
+The [Lambda Calculus](Lambda-Calculus.md) page gives an overview, describes the rules, compares syntax, and explains why it is Turing-complete.
+
 Pages:
 - [Haskell Installation](Haskell-Installation.md)
 - [Functional Programming](Functional-Programming.md)
@@ -24,3 +26,4 @@ Pages:
 - [Recursion](Recursion.md)
 - [BNFC Installation](BNFC-Installation.md) (requires Haskell installation)
 - [Assignment 1](Assignment1.md)
+- [Lambda Calculus](Lambda-Calculus.md)
