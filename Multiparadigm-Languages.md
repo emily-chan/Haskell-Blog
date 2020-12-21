@@ -1,6 +1,6 @@
 # Multi-paradigm Langauges
 
-While Haskell is a purely functional programming language, a language like Scala, which stands for Scalable Language, not only supports functional programming but also object-oriented programming. Scala is similar to languages like Java and C++ and has more complicated syntax but different in that it uses type inference and functions are objects, among other things.
+A multi-paradigm language is one that has multiple programming paradigms, such as functional, imperative, and object-oriented programming, to name a few. While Haskell is a purely functional programming language, a language like Scala, which stands for Scalable Language, supports both functional programming and object-oriented programming. Scala is similar to languages like Java and C++ and has more complicated syntax but different in that it uses type inference and functions are objects, among other things.
 
 ## How does Scala integrate functional and object-oriented programming?
 Scala integrates functional programming by using type inference so the data type of a variable does not need to be defined explicitly. Instead of using static variables or methods, Scala uses singleton objects where the essential class only contains one object in the file. Another feature of Scala is that it uses pattern matching like Haskell and has a system that supports algebraic data types and higher-order types. Scala also uses immutability, meaning that once a variable is declared, it can't be changed. Like Haskell, Scala utilizes lazy evaluation where the computations occur in a lazy manner and evaluates expressions when necessary.  There is also pattern matching and case classes so that programmers can write more logical code. Higher-order functions is another aspect of Scala, and they are used for function composition, and lambda or anonymous functions. Scala also supports concurrency control and parallelism, making it convenient for users to write less code in a type-safe manner while still applying general programming patterns effectively.
@@ -64,8 +64,8 @@ The program below shows a function that takes in a two parameters of type Int, t
 In Java:
 ```Java
 int powCbrt(int num1, int num2) {
-    int result = Math.pow(num1, num2);
-    return (int) (Math.cbrt(result));
+  int result = Math.pow(num1, num2);
+  return (int) (Math.cbrt(result));
 }
 ```
 
@@ -81,7 +81,7 @@ def powCbrt(num1: Int, num2: Int) = {
 Comparing both functions, Java uses the return statement whereas Scala uses type inference instead. The Scala version also imports the math library at the beginning which doesn't require calling it whenever a method within the math library is used like in Java. In the last line, Scala uses the `toInt` method, which declares the value `result` as immutable. While these differences are subtle between Scala and Java, they become more noticeable in larger programs and can reduce the number of lines of code and make it more efficient.
 
 ## Benefits
-Before writing this post, I wasn't familiar with Scala, but it was interesting to research features to learn more about how it works as a functional and object-oriented programming language. Aside from these advantages, Scala is fairly easy to learn, especially with prior knowledge of Java (which I have), and can be used to bridge the gap between Java and Haskell. This is helpful to follow functional programming and apply these practices to an object-oriented language like Java and have fewer lines of code and less bugs, ultimately improving productivity and quality. Scala also has good IDE support, such as IntelliJ IDEA and Scala IDE to name a couple.
+Before writing this post, I wasn't familiar with Scala, but it was interesting to research features to learn more about how it works as a functional and object-oriented programming language. Aside from these advantages, Scala is fairly easy to learn, especially with prior knowledge of Java (which I have), and can be used to bridge the gap between Java and Haskell. This is helpful to follow functional programming and apply these practices to an object-oriented language like Java and have fewer lines of code and less bugs, ultimately improving productivity and quality. Scala also has good IDE support, such as IntelliJ IDEA and Scala IDE.
 
 The name Scala represents that this language is designed to grow along with the demands of its users. Therefore, I can see it becoming more popular and valuable as more users discover it because of its flexibility and it's a multi-paradigm language.
 
