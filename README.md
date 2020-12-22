@@ -25,7 +25,7 @@ I benchmarked algorithms on [Haskell vs. Python](HaskellvsPython.md) to compare 
 
 The [Monads](Monads.md) page explains the monad laws, different types of monads and their use cases, specifically the `Maybe` monad.
 
-From a predefined Animation module, I created an [Animation](Animation.md) of the Olympics logo by applying list comprehensions and other functional programming concept.
+From a predefined Animation library, I created an [Animation](Animation.md) of the Olympics logo by applying list comprehensions and other functional programming concept.
 
 I hope this blog is helpful or insightful for anyone interested in learning Haskell or functional programming and how it relates to other languages or topics.
 

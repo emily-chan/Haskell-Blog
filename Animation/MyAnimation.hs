@@ -1,8 +1,3 @@
-{-
-Emily Chan
-ID: 190042698
--}
-
 module MyAnimation where
 
 import Animation
