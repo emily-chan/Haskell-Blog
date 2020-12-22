@@ -23,7 +23,11 @@ The [Lambda Calculus](Lambda-Calculus.md) page gives an overview, describes the 
 
 I benchmarked algorithms on [Haskell vs. Python](HaskellvsPython.md) to compare the execution times of the same programs in both Haskell and Python.
 
-The [Monads](Monads.md) page explains different types of monads and what they are used for, specifically the `Maybe` monad.
+The [Monads](Monads.md) page explains the monad laws, different types of monads and their use cases, specifically the `Maybe` monad.
+
+From a predefined Animation module, I created an [Animation](Animation.md) of the Olympics logo by applying list comprehensions and other functional programming concept.
+
+I hope this blog is helpful or insightful for anyone interested in learning Haskell or functional programming and how it relates to other languages or topics.
 
 Pages:
 - [Haskell Installation](Haskell-Installation.md)
@@ -36,3 +40,4 @@ Pages:
 - [Multi-paradigm Languages](Multiparadigm-Languages.md)
 - [Haskell vs. Python](HaskellvsPython.md)
 - [Monads](Monads.md)
+- [Animation](Animation.md)
