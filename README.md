@@ -21,7 +21,9 @@ The [Lambda Calculus](Lambda-Calculus.md) page gives an overview, describes the 
 
 [Multi-paradigm Languages](Multiparadigm-Languages.md) explores the language Scala on how it integrates functional and object-oriented programming and its benefits.
 
-I benchmarked algorithms on [Haskell vs. Python](HaskellvsPython.md) to compare the execution times for programs in both Haskell and Python.
+I benchmarked algorithms on [Haskell vs. Python](HaskellvsPython.md) to compare the execution times of the same programs in both Haskell and Python.
+
+The [Monads](Monads.md) page explains different types of monads and what they are used for, specifically the `Maybe` monad.
 
 Pages:
 - [Haskell Installation](Haskell-Installation.md)
@@ -33,3 +35,4 @@ Pages:
 - [Lambda Calculus](Lambda-Calculus.md)
 - [Multi-paradigm Languages](Multiparadigm-Languages.md)
 - [Haskell vs. Python](HaskellvsPython.md)
+- [Monads](Monads.md)
