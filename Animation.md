@@ -23,3 +23,6 @@ picture = (combine
 test :: IO ()
 test = writeFile "animation.svg" (svg 800 600 picture)
 ```
+
+#### References
+- Ross Patterson (provided the Animation library)
