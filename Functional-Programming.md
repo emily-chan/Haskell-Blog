@@ -63,5 +63,5 @@ comment
 This is a brief introduction to Haskell and other blog posts will explore various aspects in more detail.
 
 #### References
-- https://hackmd.io/@alexhkurz/SJKWvna6U
-- https://www.tutorialspoint.com/functional_programming/functional_programming_introduction.htm
+- [Imperative vs Functional Programming](https://hackmd.io/@alexhkurz/SJKWvna6U)
+- [Functional Programming - Introduction](https://www.tutorialspoint.com/functional_programming/functional_programming_introduction.htm)
