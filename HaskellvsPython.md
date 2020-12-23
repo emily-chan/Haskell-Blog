@@ -49,7 +49,7 @@ For a basic program like `isPalindrome`, the execution time was less than a seco
 
 I chose to test a fibonacci function because it is recursive and as the number increases, it takes longer to compute. This program takes in an argument of type `Int` and returns an `Int`.
 
-Warning: My computer's fan became loud as I started running the fibonacci program in both Haskell and Python for numbers greater than 30, so keep this in mind when testing.
+**Warning**: My computer's fan became loud as I started running the fibonacci program in both Haskell and Python for numbers greater than 30, so keep this in mind when testing.
 
 ```Haskell
 fib :: Int -> Int
@@ -190,7 +190,24 @@ For `isPalindrome`, the execution times were close and less than a second. I not
 
 For `fib`, the execution times for numbers less than 30 were within the same range. However, I discovered that numbers 30 and greater ran faster in Python compared to Haskell. The largest difference was for the number 40, and the execution time was 91.25 seconds in Haskell whereas it was 39 seconds in Python. This resulted in a 52.25 second difference which is quite drastic. I was a bit surprised by this because the Haskell code for this function is more concise so I expected it to run faster than the Python version.
 
-There could also be other factors that affect the execution time of running these programs, such as other applications I have open on my computer while running them, but this shouldn't make a significant difference.
+Below is a table of `time(fib(n+1)) / time(fib(n))` for the last ten computations to further compare the rate of the execution times (rounded to the ten thousandths place) of programs in Haskell and Python:
+
+fib(n+1)/fib(n) | Haskell (seconds) | Python (seconds)
+----------------|-------------------|-----------------
+fib(31)/fib(30) | 1.5208            | 1.3784
+fib(32)/fib(31) | 1.5548            | 1.4510
+fib(33)/fib(32) | 1.5198            | 1.6216
+fib(34)/fib(33) | 1.3971            | 1.6667
+fib(35)/fib(34) | 1.7012            | 1.6500
+fib(36)/fib(35) | 1.6427            | 1.5455
+fib(37)/fib(36) | 1.6214            | 1.6078
+fib(38)/fib(37) | 1.5197            | 1.5854
+fib(39)/fib(38) | 1.6824            | 1.6154
+fib(40)/fib(39) | 1.6341            | 1.8571
+
+Based on the table, the computations are relatively constant for both versions of `fib`. For Haskell and Python, the average difference is 0.1133 second and 0.4787 second among all computations, respectively. This is an interesting finding because looking at the execution times alone, the Haskell version took longer than the Python version. However, after computing `time(fib(n+1)) / time(fib(n))` the Haskell version seems to be more consistent with a lower average difference while the Python version has a higher average difference.
+
+There could also be other factors that affect the execution time of running these programs, such as other applications open on my computer while running them or the amount of time between each computation which could've given my computer a chance to rest, but this shouldn't make a significant difference.
 
 #### References
 - https://wiki.python.org/moin/PythonVsHaskell
