@@ -1,6 +1,6 @@
 # Monads
 
-Monads are considered to be composable computation descriptions, which separates the composition timeline from the execution timeline. Monads are also used to structure functional programs, and can be applied towards various evaluation strategies or building parsers. In class, we briefly discussed the Maybe monad so I wanted to explore this and the general concept of monads more.
+Monads are considered to be composable computation descriptions, which is the separation of the composition timeline and the computation's execution timeline. Monads can perform a computation to implicitly carry extra data associated with said computation, and its output that is returned when a program runs. Monads are also used to structure functional programs, and can be applied towards various evaluation strategies or building parsers. In class, we briefly discussed the Maybe monad so I wanted to explore this and the general concept of monads more.
 
 The table below shows the different monads and their respective uses for imperative semantics:
 | Monad    | Imperative Semantics          | Description
@@ -102,6 +102,15 @@ do {
 }
 ```
 
+An example of a non-commutative monad could be if one computation must be done before the next computation like adding the items when checking out at a grocery store then applying tax:
+```Haskell
+do {
+  subtotal <- item1 + item2
+  tax <- subtotal * (1+taxRate)
+  m subtotal tax
+}
+```
+
 ### Maybe Monad
 As stated earlier, the Maybe monad is a way to represent computations that don't return a value.
 The `Maybe` type is defined like so, where type a is polymorphic and `Nothing` and `Just` are constructors:
@@ -164,6 +173,5 @@ The `Maybe` type is a great way to gracefully handle errors or exceptions.
 Lists and Maybe are similar in that they both represent computations that return zero or one value. However, lists can also return multiple values, which is defined by the length of the list. The binding operator for lists is `[a] -> (a -> [b]) -> [b]`, where a function maps to a given list to retrieve a list of lists, then concatenate the list of lists the get a single list. The chaining strategy for a list monad models non-determinism because `(a -> [b])` can generate an input of type `a` with an unknown number of potential outputs type `b`, which are combined into one list.
 
 #### References
-- https://wiki.haskell.org/Monad
-- https://www.haskell.org/tutorial/monads.html
-- https://en.wikibooks.org/wiki/Haskell/Understanding_monads
+- [Monad on Haskell wiki](https://wiki.haskell.org/Monad)
+- [Understanding monads on Wikibooks](https://en.wikibooks.org/wiki/Haskell/Understanding_monads)
