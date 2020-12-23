@@ -46,5 +46,5 @@ To apply this function to the same variable, (λx.x^2) 8 = 64.
 When a system of data manipulation rules, like a programming language, can be used to simulate a Turing machine, then it is considered Turing-complete. Lambda calculus is Turing-complete because it's a universal computation model that can be used to simulate any Turing machine. The rules of alpha and beta reduction and the ability to have recursive functions are important because this helps prove that lambda calculus is Turing-complete. Lambda calculus can be typed or untyped, and typed lambda calculus is weaker than untyped. For typed lambda calculus, functions can only be applied depending on if they're able to accept the data type for the input. Typed lambda calculus can express less than untyped calculus. This is crucial to note because typed lambda calculus is Turing-complete but some kinds of typed lambda calculus are not.
 
 #### References
-- https://plato.stanford.edu/entries/lambda-calculus/
-- https://brilliant.org/wiki/lambda-calculus/
+- [The Lambda Calculus on Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/lambda-calculus/)
+- [Lambda Calculus on Brilliant](https://brilliant.org/wiki/lambda-calculus/)

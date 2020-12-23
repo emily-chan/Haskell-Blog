@@ -210,6 +210,6 @@ Based on the table, the computations are relatively constant for both versions o
 There could also be other factors that affect the execution time of running these programs, such as other applications open on my computer while running them or the amount of time between each computation which could've given my computer a chance to rest, but this shouldn't make a significant difference.
 
 #### References
-- https://wiki.python.org/moin/PythonVsHaskell
-- https://docs.python.org/3/library/time.html
-- https://stackoverflow.com/questions/6766450/haskell-function-execution-time
+- [Python vs Haskell](https://wiki.python.org/moin/PythonVsHaskell)
+- [time — Time access and conversions](https://docs.python.org/3/library/time.html)
+- [Haskell function execution time](https://stackoverflow.com/questions/6766450/haskell-function-execution-time)

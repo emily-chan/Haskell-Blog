@@ -146,5 +146,5 @@ Since multiplication rules are applied before addition, the output would be:
 Overall, this assignment showed me the importance of recursion and gain a better understanding of abstract and concrete syntax, and how these can concepts can be applied to build something useful like a calculator. Learning about NN and PN first was helpful to comprehend how numbers in their simplest form are translated to binary numbers. Using successor numbers to define arithmetic functions was an effective way that allowed me to understand the purpose of recursion. After demonstrating my ability to define these functions using recursion, I moved onto creating an interpreter for abstract syntax where Exp was defined as a data type and eval was used to evaluate the arithmetic functions I defined at the beginning.  
 
 #### References
-- https://github.com/alexhkurz/programming-languages-2020/blob/master/assignment-1.md
-- https://bnfc.digitalgrammars.com/tutorial/bnfc-tutorial.html
+- [Assignment 1](https://github.com/alexhkurz/programming-languages-2020/blob/master/assignment-1.md)
+- [BNFC tutorial](https://bnfc.digitalgrammars.com/tutorial/bnfc-tutorial.html)

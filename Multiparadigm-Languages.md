@@ -86,6 +86,6 @@ Before writing this post, I wasn't familiar with Scala, but it was interesting t
 The name Scala represents that this language is designed to grow along with the demands of its users. Therefore, I can see it becoming more popular and valuable as more users discover it because of its flexibility and it's a multi-paradigm language.
 
 #### References
-- https://en.wikipedia.org/wiki/Scala_(programming_language)
-- https://www.tutorialspoint.com/scala/scala_overview.htm
-- https://www.scala-exercises.org/scala_tutorial/object_oriented_programming
+- [Scala (programming language)](https://en.wikipedia.org/wiki/Scala_(programming_language))
+- [Scala - Overview](https://www.tutorialspoint.com/scala/scala_overview.htm)
+- [Scala Exercises - OOP](https://www.scala-exercises.org/scala_tutorial/object_oriented_programming)

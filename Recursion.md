@@ -106,4 +106,4 @@ Ok, one module loaded.
 ```
 
 #### References
-- http://learnyouahaskell.com/recursion
+- [Recursion on Learn You a Haskell](http://learnyouahaskell.com/recursion)

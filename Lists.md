@@ -98,6 +98,6 @@ capitalize "hello"
 ```
 
 #### References
-- https://hackage.haskell.org/package/base-4.9.1.0/docs/Data-List.html
-- https://wiki.haskell.org/How_to_work_on_lists
-- https://wiki.haskell.org/List_comprehension
+- [Data.List documentation](https://hackage.haskell.org/package/base-4.9.1.0/docs/Data-List.html)
+- [How to work on lists](https://wiki.haskell.org/How_to_work_on_lists)
+- [List comprehension](https://wiki.haskell.org/List_comprehension)

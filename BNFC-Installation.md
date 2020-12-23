@@ -96,3 +96,7 @@ EAdd (EInt 1) (EMul (EInt 2) (EInt 3))
 
 1 + 2 * 3
 ```
+
+#### References
+- [BNFC website](https://bnfc.digitalgrammars.com/)
+- [BNFC tutorial](https://bnfc.digitalgrammars.com/tutorial/bnfc-tutorial.html)

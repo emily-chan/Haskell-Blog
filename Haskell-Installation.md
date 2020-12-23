@@ -53,5 +53,5 @@ To exit GHCi, enter `:quit` and you should receive a message `Leaving GHCi.`
 A useful shortcut for these are `:l`, `:r`, `:i`, `:t`, `:q` instead of typing out the whole word.
 
 #### References
-- https://hackmd.io/@alexhkurz/Hk86XnCzD
-- https://docs.haskellstack.org/en/stable/README/
+- [Installing Haskell](https://hackmd.io/@alexhkurz/Hk86XnCzD)
+- [The Haskell Tool Stack](https://docs.haskellstack.org/en/stable/README/)

@@ -174,4 +174,4 @@ Lists and Maybe are similar in that they both represent computations that return
 
 #### References
 - [Monad on Haskell wiki](https://wiki.haskell.org/Monad)
-- [Understanding monads on Wikibooks](https://en.wikibooks.org/wiki/Haskell/Understanding_monads)
+- [Understanding monads](https://en.wikibooks.org/wiki/Haskell/Understanding_monads)
